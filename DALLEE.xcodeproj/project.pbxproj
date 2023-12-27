@@ -1,0 +1,624 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		693F78F22B3C95A0003D304D /* DALLEEApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693F78F12B3C95A0003D304D /* DALLEEApp.swift */; };
+		693F78F42B3C95A0003D304D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693F78F32B3C95A0003D304D /* ContentView.swift */; };
+		693F78F62B3C95A2003D304D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 693F78F52B3C95A2003D304D /* Assets.xcassets */; };
+		693F78F92B3C95A2003D304D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 693F78F82B3C95A2003D304D /* Preview Assets.xcassets */; };
+		693F79032B3C95A2003D304D /* DALLEETests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693F79022B3C95A2003D304D /* DALLEETests.swift */; };
+		693F790D2B3C95A2003D304D /* DALLEEUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693F790C2B3C95A2003D304D /* DALLEEUITests.swift */; };
+		693F790F2B3C95A2003D304D /* DALLEEUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693F790E2B3C95A2003D304D /* DALLEEUITestsLaunchTests.swift */; };
+		693F791D2B3C9706003D304D /* OpenAIKit in Frameworks */ = {isa = PBXBuildFile; productRef = 693F791C2B3C9706003D304D /* OpenAIKit */; };
+		693F791F2B3C9F43003D304D /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693F791E2B3C9F43003D304D /* ViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		693F78FF2B3C95A2003D304D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 693F78E62B3C95A0003D304D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 693F78ED2B3C95A0003D304D;
+			remoteInfo = DALLEE;
+		};
+		693F79092B3C95A2003D304D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 693F78E62B3C95A0003D304D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 693F78ED2B3C95A0003D304D;
+			remoteInfo = DALLEE;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		693F78EE2B3C95A0003D304D /* DALLEE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DALLEE.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		693F78F12B3C95A0003D304D /* DALLEEApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DALLEEApp.swift; sourceTree = "<group>"; };
+		693F78F32B3C95A0003D304D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		693F78F52B3C95A2003D304D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		693F78F82B3C95A2003D304D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		693F78FE2B3C95A2003D304D /* DALLEETests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DALLEETests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		693F79022B3C95A2003D304D /* DALLEETests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DALLEETests.swift; sourceTree = "<group>"; };
+		693F79082B3C95A2003D304D /* DALLEEUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DALLEEUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		693F790C2B3C95A2003D304D /* DALLEEUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DALLEEUITests.swift; sourceTree = "<group>"; };
+		693F790E2B3C95A2003D304D /* DALLEEUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DALLEEUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		693F791E2B3C9F43003D304D /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		693F78EB2B3C95A0003D304D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				693F791D2B3C9706003D304D /* OpenAIKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		693F78FB2B3C95A2003D304D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		693F79052B3C95A2003D304D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		693F78E52B3C95A0003D304D = {
+			isa = PBXGroup;
+			children = (
+				693F78F02B3C95A0003D304D /* DALLEE */,
+				693F79012B3C95A2003D304D /* DALLEETests */,
+				693F790B2B3C95A2003D304D /* DALLEEUITests */,
+				693F78EF2B3C95A0003D304D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		693F78EF2B3C95A0003D304D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				693F78EE2B3C95A0003D304D /* DALLEE.app */,
+				693F78FE2B3C95A2003D304D /* DALLEETests.xctest */,
+				693F79082B3C95A2003D304D /* DALLEEUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		693F78F02B3C95A0003D304D /* DALLEE */ = {
+			isa = PBXGroup;
+			children = (
+				693F78F12B3C95A0003D304D /* DALLEEApp.swift */,
+				693F78F32B3C95A0003D304D /* ContentView.swift */,
+				693F78F52B3C95A2003D304D /* Assets.xcassets */,
+				693F78F72B3C95A2003D304D /* Preview Content */,
+				693F791E2B3C9F43003D304D /* ViewModel.swift */,
+			);
+			path = DALLEE;
+			sourceTree = "<group>";
+		};
+		693F78F72B3C95A2003D304D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				693F78F82B3C95A2003D304D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		693F79012B3C95A2003D304D /* DALLEETests */ = {
+			isa = PBXGroup;
+			children = (
+				693F79022B3C95A2003D304D /* DALLEETests.swift */,
+			);
+			path = DALLEETests;
+			sourceTree = "<group>";
+		};
+		693F790B2B3C95A2003D304D /* DALLEEUITests */ = {
+			isa = PBXGroup;
+			children = (
+				693F790C2B3C95A2003D304D /* DALLEEUITests.swift */,
+				693F790E2B3C95A2003D304D /* DALLEEUITestsLaunchTests.swift */,
+			);
+			path = DALLEEUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		693F78ED2B3C95A0003D304D /* DALLEE */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 693F79122B3C95A2003D304D /* Build configuration list for PBXNativeTarget "DALLEE" */;
+			buildPhases = (
+				693F78EA2B3C95A0003D304D /* Sources */,
+				693F78EB2B3C95A0003D304D /* Frameworks */,
+				693F78EC2B3C95A0003D304D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DALLEE;
+			packageProductDependencies = (
+				693F791C2B3C9706003D304D /* OpenAIKit */,
+			);
+			productName = DALLEE;
+			productReference = 693F78EE2B3C95A0003D304D /* DALLEE.app */;
+			productType = "com.apple.product-type.application";
+		};
+		693F78FD2B3C95A2003D304D /* DALLEETests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 693F79152B3C95A2003D304D /* Build configuration list for PBXNativeTarget "DALLEETests" */;
+			buildPhases = (
+				693F78FA2B3C95A2003D304D /* Sources */,
+				693F78FB2B3C95A2003D304D /* Frameworks */,
+				693F78FC2B3C95A2003D304D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				693F79002B3C95A2003D304D /* PBXTargetDependency */,
+			);
+			name = DALLEETests;
+			productName = DALLEETests;
+			productReference = 693F78FE2B3C95A2003D304D /* DALLEETests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		693F79072B3C95A2003D304D /* DALLEEUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 693F79182B3C95A2003D304D /* Build configuration list for PBXNativeTarget "DALLEEUITests" */;
+			buildPhases = (
+				693F79042B3C95A2003D304D /* Sources */,
+				693F79052B3C95A2003D304D /* Frameworks */,
+				693F79062B3C95A2003D304D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				693F790A2B3C95A2003D304D /* PBXTargetDependency */,
+			);
+			name = DALLEEUITests;
+			productName = DALLEEUITests;
+			productReference = 693F79082B3C95A2003D304D /* DALLEEUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		693F78E62B3C95A0003D304D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					693F78ED2B3C95A0003D304D = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					693F78FD2B3C95A2003D304D = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = 693F78ED2B3C95A0003D304D;
+					};
+					693F79072B3C95A2003D304D = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = 693F78ED2B3C95A0003D304D;
+					};
+				};
+			};
+			buildConfigurationList = 693F78E92B3C95A0003D304D /* Build configuration list for PBXProject "DALLEE" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 693F78E52B3C95A0003D304D;
+			packageReferences = (
+				693F791B2B3C9706003D304D /* XCRemoteSwiftPackageReference "OpenAIKit" */,
+			);
+			productRefGroup = 693F78EF2B3C95A0003D304D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				693F78ED2B3C95A0003D304D /* DALLEE */,
+				693F78FD2B3C95A2003D304D /* DALLEETests */,
+				693F79072B3C95A2003D304D /* DALLEEUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		693F78EC2B3C95A0003D304D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				693F78F92B3C95A2003D304D /* Preview Assets.xcassets in Resources */,
+				693F78F62B3C95A2003D304D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		693F78FC2B3C95A2003D304D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		693F79062B3C95A2003D304D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		693F78EA2B3C95A0003D304D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				693F78F42B3C95A0003D304D /* ContentView.swift in Sources */,
+				693F791F2B3C9F43003D304D /* ViewModel.swift in Sources */,
+				693F78F22B3C95A0003D304D /* DALLEEApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		693F78FA2B3C95A2003D304D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				693F79032B3C95A2003D304D /* DALLEETests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		693F79042B3C95A2003D304D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				693F790D2B3C95A2003D304D /* DALLEEUITests.swift in Sources */,
+				693F790F2B3C95A2003D304D /* DALLEEUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		693F79002B3C95A2003D304D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 693F78ED2B3C95A0003D304D /* DALLEE */;
+			targetProxy = 693F78FF2B3C95A2003D304D /* PBXContainerItemProxy */;
+		};
+		693F790A2B3C95A2003D304D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 693F78ED2B3C95A0003D304D /* DALLEE */;
+			targetProxy = 693F79092B3C95A2003D304D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		693F79102B3C95A2003D304D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		693F79112B3C95A2003D304D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		693F79132B3C95A2003D304D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DALLEE/Preview Content\"";
+				DEVELOPMENT_TEAM = F7WMR3QZR6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = DALLEE.gabrielsanzone.app.DALLEE;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		693F79142B3C95A2003D304D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DALLEE/Preview Content\"";
+				DEVELOPMENT_TEAM = F7WMR3QZR6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = DALLEE.gabrielsanzone.app.DALLEE;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		693F79162B3C95A2003D304D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F7WMR3QZR6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = DALLEE.gabrielsanzone.app.DALLEETests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DALLEE.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DALLEE";
+			};
+			name = Debug;
+		};
+		693F79172B3C95A2003D304D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F7WMR3QZR6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = DALLEE.gabrielsanzone.app.DALLEETests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DALLEE.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DALLEE";
+			};
+			name = Release;
+		};
+		693F79192B3C95A2003D304D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F7WMR3QZR6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = DALLEE.gabrielsanzone.app.DALLEEUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DALLEE;
+			};
+			name = Debug;
+		};
+		693F791A2B3C95A2003D304D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F7WMR3QZR6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = DALLEE.gabrielsanzone.app.DALLEEUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DALLEE;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		693F78E92B3C95A0003D304D /* Build configuration list for PBXProject "DALLEE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				693F79102B3C95A2003D304D /* Debug */,
+				693F79112B3C95A2003D304D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		693F79122B3C95A2003D304D /* Build configuration list for PBXNativeTarget "DALLEE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				693F79132B3C95A2003D304D /* Debug */,
+				693F79142B3C95A2003D304D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		693F79152B3C95A2003D304D /* Build configuration list for PBXNativeTarget "DALLEETests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				693F79162B3C95A2003D304D /* Debug */,
+				693F79172B3C95A2003D304D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		693F79182B3C95A2003D304D /* Build configuration list for PBXNativeTarget "DALLEEUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				693F79192B3C95A2003D304D /* Debug */,
+				693F791A2B3C95A2003D304D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		693F791B2B3C9706003D304D /* XCRemoteSwiftPackageReference "OpenAIKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MarcoDotIO/OpenAIKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		693F791C2B3C9706003D304D /* OpenAIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 693F791B2B3C9706003D304D /* XCRemoteSwiftPackageReference "OpenAIKit" */;
+			productName = OpenAIKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 693F78E62B3C95A0003D304D /* Project object */;
+}
